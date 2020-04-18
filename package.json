@@ -1,0 +1,24 @@
+{
+  "name": "basic-rest-api",
+  "version": "0.0.1",
+  "description": "Basic REST API with node.js & express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "node.js",
+    "express"
+  ],
+  "author": "mksbnt",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^13.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.4"
+  }
+}
