@@ -8,6 +8,6 @@ const server = http.createServer(app);
 
 server.listen(port, () =>
   log(
-    chalk.blue("Server has been started at port:") + chalk.blue.bold(`${port}`)
+    chalk.blue("[server] started at port: ") + chalk.blue.bold(`${port}`)
   )
 );
