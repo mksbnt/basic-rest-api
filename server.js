@@ -1,7 +1,13 @@
 const http = require("http");
-const app =  require("./app");
+const app = require("./app");
+const chalk = require("chalk");
 
+const log = console.log;
 const port = process.env.PORT || 3000;
 const server = http.createServer(app);
 
-server.listen(port);
+server.listen(port, () =>
+  log(
+    chalk.blue("Server has been started at port:") + chalk.blue.bold(`${port}`)
+  )
+);
